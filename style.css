@@ -1,0 +1,93 @@
+html, body {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  background-color: rgb(223, 223, 223);
+}
+
+#calculator {
+  width: 280px;
+  margin: 80px auto;
+  box-shadow: 0px 0px 100px 5px #aaa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#top, #equal {
+  background-image: linear-gradient(to top right, rgb(255, 0, 140), rgb(255, 208, 0));
+  color: white;
+}
+
+#top {
+  padding-left: 10px;
+  padding-right: 20px;
+  position: relative;
+}
+
+#circlesContainer {
+  height: 20px;
+}
+
+#circlesContainer>div {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#peopleofcodes {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+#result {
+  font-size: 50px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+#operation {
+  text-align: right;
+  padding-bottom: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.row {
+  display: flex;
+  width: 280px;
+}
+
+.button {
+  flex: 1;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
+  transition-property: background-color, color, font-weight;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+}
+
+.symbol {
+  background-color: #dddddd8f;
+}
+
+#ac {
+  color:rgb(255, 0, 140);
+}
+
+#zero {
+  flex: 2;
+}
+
+.button:not(#equal):hover {
+  background-color: #03a9f4 !important;
+  color: white !important;
+  font-weight: bold;
+}
